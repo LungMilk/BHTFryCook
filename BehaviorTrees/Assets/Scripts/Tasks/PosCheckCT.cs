@@ -17,7 +17,9 @@ public class PosCheckCT : ConditionTask
 
     bool CheckPos(Vector3 pos1, Vector3 pos2)
     {
-        if (Vector3.Distance(pos1, pos2) <= threshold.value) return true;
+        if (Vector3.Distance(pos1, pos2) <= threshold.value) { 
+            Debug.Log($"At {objectB} position");
+        return true; }
         else return false;
     }
 }

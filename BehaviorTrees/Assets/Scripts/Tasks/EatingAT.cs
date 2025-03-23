@@ -16,8 +16,8 @@ public class EatingAT : ActionTask
     }
     protected override void OnExecute()
     {
+        Debug.Log($"{frenchFryScript.cooked}");
         frenchFryScript.cooked = !frenchFryScript.cooked;
-        
     }
 
 }

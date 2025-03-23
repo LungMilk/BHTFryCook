@@ -12,7 +12,7 @@ public class CookedCT : ConditionTask
         if(frenchFryObj.value.gameObject.GetComponent<FrenchFry>() != null)
         {
             frenchFryScript = frenchFryObj.value.gameObject.GetComponent<FrenchFry>();
-            Debug.Log(frenchFryScript.cooked);
+            //Debug.Log(frenchFryScript.cooked);
             return frenchFryScript.cooked;
         }
         else { return false; };
